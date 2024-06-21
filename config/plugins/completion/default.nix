@@ -1,0 +1,1 @@
+{scanPaths, ...}: {imports = scanPaths ./.;}
