@@ -16,7 +16,7 @@ in {
       '';
       preview = {
         winConfig = {
-          inherit opts;
+          inherit (opts) border;
           winblend = 0;
         };
         mappings = {
