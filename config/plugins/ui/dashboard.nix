@@ -8,7 +8,6 @@
       config = {
         packages = {enable = false;};
         week_header.enable = true;
-        footer = [" " " " "Don't Stop Until You are Proud..."];
         project = {enable = false;};
         header = [
           "███╗   ██╗██╗██╗  ██╗██╗   ██╗██╗███╗   ███╗"

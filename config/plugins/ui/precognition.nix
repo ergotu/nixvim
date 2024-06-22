@@ -11,7 +11,7 @@
       };
     })
   ];
-  extraConfigLua = ''
-    require('precognition').setup({ })
-  '';
+  # extraConfigLua = ''
+  #   require('precognition').setup({ })
+  # '';
 }
