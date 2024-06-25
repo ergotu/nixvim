@@ -39,9 +39,11 @@ in {
   };
 
   keymaps = [
-    (mkKeymap "n" "<leader>bp" "<cmd>:BufferLinePick<cr>" "BufferLine Pick")
-    (mkKeymap "n" "<cmd>:bp | bd #<cr>" "<leader>bc" "Buffer Delete")
+    (mkKeymap "n" "<Tab>" "<cmd>bufferlineCycleNext<cr>" "Cycle to next buffer")
+    (mkKeymap "n" "<S-Tab>" "<cmd>bufferlineCyclePrevious<cr>" "Cycle to previous buffer")
 
+    (mkKeymap "n" "<leader>b" "+buffer" "+buffer")
+    (mkKeymap "n" "<leader>bp" "<cmd>:BufferLinePick<cr>" "BufferLine Pick")
     (mkKeymap "n" "<leader>bP" "<cmd>BufferLineTogglePin<cr>" "Buffer Pin")
     (mkKeymap "n" "<leader>bd" "<cmd>BufferLineSortByDirectory<cr>" "Buffer Sort by dir")
     (mkKeymap "n" "<leader>be" "<cmd>BufferLineSortByExtension<cr>" "Buffer Sort by ext")
