@@ -3,6 +3,9 @@
   lib,
   ...
 }: {
+  viAlias = true;
+  vimAlias = true;
+
   globals = {
     # Set the leader to space
     mapleader = " ";
