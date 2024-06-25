@@ -14,7 +14,11 @@
         which_key = true;
         treesitter = true;
         fidget = true;
-        notify = true;
+        notifier = true;
+        dap_ui = true;
+        ufo = true;
+        lsp_saga = true;
+        harpoon = true;
         mini = {
           enabled = true;
           indentscope_color = "mauve";
