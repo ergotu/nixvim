@@ -19,6 +19,8 @@
     };
   };
 
+  luaLoader.enable = true;
+
   globalOpts.statusline = "%#Normal#";
 
   clipboard = {
