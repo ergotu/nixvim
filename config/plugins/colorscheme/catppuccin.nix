@@ -23,6 +23,11 @@
           enabled = true;
           indentscope_color = "mauve";
         };
+        indent_blankline = {
+          enabled = true;
+          scope_color = "mauve";
+          colored_indent_levels = true;
+        };
       };
     };
   };
