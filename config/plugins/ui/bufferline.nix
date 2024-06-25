@@ -39,8 +39,8 @@ in {
   };
 
   keymaps = [
-    (mkKeymap "n" "<Tab>" "<cmd>bufferlineCycleNext<cr>" "Cycle to next buffer")
-    (mkKeymap "n" "<S-Tab>" "<cmd>bufferlineCyclePrevious<cr>" "Cycle to previous buffer")
+    (mkKeymap "n" "<Tab>" "<cmd>BufferLineCycleNext<cr>" "Cycle to next buffer")
+    (mkKeymap "n" "<S-Tab>" "<cmd>BufferLineCyclePrevious<cr>" "Cycle to previous buffer")
 
     (mkKeymap "n" "<leader>b" "+buffer" "+buffer")
     (mkKeymap "n" "<leader>bp" "<cmd>:BufferLinePick<cr>" "BufferLine Pick")
