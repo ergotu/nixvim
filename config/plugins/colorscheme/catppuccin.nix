@@ -3,6 +3,9 @@
     enable = true;
     settings = {
       flavor = "mocha";
+      dim_inactive = {
+        enabled = true;
+      };
       integrations = {
         cmp = true;
         gitsigns = true;
