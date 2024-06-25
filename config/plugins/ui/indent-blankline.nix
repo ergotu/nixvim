@@ -13,6 +13,7 @@
           "gitcommit"
           "TelescopePrompt"
           "TelescopeResults"
+          "nvimtree"
           "''"
         ];
       };

@@ -31,6 +31,7 @@
         "neotest-summary"
         "neotest-output-panel"
         "dashboard"
+        "nvimtree"
       ];
       callback = {
         __raw = ''
