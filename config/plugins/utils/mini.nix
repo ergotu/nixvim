@@ -3,7 +3,9 @@
     enable = true;
     modules = {
       ai = {};
-      indentscope = {};
+      indentscope = {
+        symbol = "│";
+      };
     };
   };
 }
