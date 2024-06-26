@@ -66,7 +66,9 @@
     wrap = false;
 
     virtualedit = "block";
-    winminwidth = 5;
+    winminwidth = 20;
+    winwidth = 20;
+    equalalways = false;
     fileencoding = "utf-8";
     list = true;
     fillchars = {eob = " ";};
