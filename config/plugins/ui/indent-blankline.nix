@@ -5,6 +5,17 @@
       scope = {
         enabled = true;
       };
+      indent = {
+        highlight = [
+          "RainbowRed"
+          "RainbowYellow"
+          "RainbowBlue"
+          "RainbowOrange"
+          "RainbowGreen"
+          "RainbowViolet"
+          "RainbowCyan"
+        ];
+      };
       exclude = {
         filetypes = [
           "dashboard"
