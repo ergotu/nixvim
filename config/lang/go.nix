@@ -15,4 +15,13 @@
       };
     };
   };
+
+  autoCmd = [
+    {
+      desc = "Change indenting for Go files";
+      event = ["FileType"];
+      pattern = ["go"];
+      command = "setlocal shiftwidth=4 tabstop=4 softtabstop=4";
+    }
+  ];
 }
