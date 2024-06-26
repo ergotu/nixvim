@@ -6,15 +6,15 @@
         enabled = true;
       };
       indent = {
-        highlight = [
-          "RainbowRed"
-          "RainbowYellow"
-          "RainbowBlue"
-          "RainbowOrange"
-          "RainbowGreen"
-          "RainbowViolet"
-          "RainbowCyan"
-        ];
+        # highlight = [
+        #   "RainbowRed"
+        #   "RainbowYellow"
+        #   "RainbowBlue"
+        #   "RainbowOrange"
+        #   "RainbowGreen"
+        #   "RainbowViolet"
+        #   "RainbowCyan"
+        # ];
       };
       exclude = {
         filetypes = [
