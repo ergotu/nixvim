@@ -23,10 +23,6 @@ in {
       };
     };
     extensions = {
-      dap-go = {
-        enable = true;
-        delve.path = "${pkgs.delve}/bin/dlv";
-      };
       dap-ui = {enable = true;};
       dap-virtual-text = {enable = true;};
     };
