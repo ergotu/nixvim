@@ -18,6 +18,7 @@
       enable = true;
       delve.path = "${pkgs.delve}/bin/dlv";
     };
+    conform-nvim.formattersByFt.go = ["goimports" "gofmt"];
   };
 
   autoCmd = [
