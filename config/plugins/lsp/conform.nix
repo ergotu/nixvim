@@ -16,7 +16,6 @@
       typescriptreact = [["prettierd" "prettier"]];
       python = ["black"];
       lua = ["stylua"];
-      nix = ["alejandra"];
       markdown = [["prettierd" "prettier"]];
       yaml = ["yamllint" "yamlfmt"];
     };

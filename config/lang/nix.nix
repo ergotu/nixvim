@@ -12,5 +12,6 @@
         };
       };
     };
+    conform-nvim.formattersByFt.nix = ["alejandra"];
   };
 }
