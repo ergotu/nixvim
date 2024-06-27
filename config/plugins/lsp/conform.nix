@@ -10,7 +10,6 @@
       liquidsoap = ["liquidsoap-prettier"];
       python = ["black"];
       lua = ["stylua"];
-      markdown = [["prettierd" "prettier"]];
       yaml = ["yamllint" "yamlfmt"];
     };
   };

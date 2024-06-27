@@ -6,7 +6,10 @@
 }: let
   inherit (mkKey) mkKeymap;
 in {
-  plugins.markdown-preview = {enable = true;};
+  plugins = {
+    markdown-preview = {enable = true;};
+    conform-nvim.formattersByFt.markdown = ["prettierd" "prettier"];
+  };
   extraPlugins = [
     pkgs.vimPlugins.glow-nvim
     (pkgs.vimUtils.buildVimPlugin {
