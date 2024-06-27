@@ -15,7 +15,7 @@ in {
       };
       hover.enabled = false;
       message.enabled = false;
-      signature.enabled = false;
+      signature.enabled = true;
       progress.enabled = false;
     };
     presets = {
