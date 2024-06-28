@@ -1,6 +1,6 @@
-{
+{pkgs, ...}: {
   plugins.nvim-autopairs = {
-    enable = true;
+    enable = false;
     settings = {
       fast_wrap = {};
       disable_filetype = ["TelescopePrompt" "vim"];
@@ -15,4 +15,6 @@
       npairs.add_rule(Rule("$$", "$$", "tex"))
 
     '';
+
+  extraPlugins = with pkgs.vimPlugins; [ultimate-autopair-nvim];
 }
