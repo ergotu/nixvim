@@ -9,11 +9,7 @@
   extraConfigLua =
     # lua
     ''
-      local npairs = require("nvim-autopairs")
-      local Rule = require("nvim-autopairs.rule")
-
-      npairs.add_rule(Rule("$$", "$$", "tex"))
-
+      require('ultimate-autopair').setup()
     '';
 
   extraPlugins = with pkgs.vimPlugins; [ultimate-autopair-nvim];
