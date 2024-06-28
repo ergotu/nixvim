@@ -13,6 +13,6 @@
       };
       diagnostics.mypy.enable = true;
     };
-    conform.formattersByFt.python = ["black"];
+    conform-nvim.formattersByFt.python = ["black"];
   };
 }
