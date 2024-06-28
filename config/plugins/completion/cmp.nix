@@ -1,4 +1,8 @@
-{opts, ...}: {
+{
+  opts,
+  lib,
+  ...
+}: {
   highlightOverride = {
     PMenu = {
       ctermbg = "none";
@@ -61,7 +65,7 @@
     cmp-async-path.enable = true;
     cmp-cmdline.enable = true;
     cmp_luasnip.enable = true;
-    cmp-nvim-lsp-signature-help.enable = true;
+    cmp-nvim-lsp-signature-help.enable = lib.mkForce false;
   };
   extraConfigLua =
     # lua
