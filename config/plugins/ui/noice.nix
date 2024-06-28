@@ -28,13 +28,4 @@ in {
   extraPlugins = with pkgs.vimPlugins; [
     nvim-notify
   ];
-  extraConfigLua = ''
-    require('notify').setup({
-    	split = true,
-    	background_colour = "#000000",
-    	render = "compact",
-    	stages = "fade_in_slide_out",
-    	top_down = false,
-    })
-  '';
 }
