@@ -6,6 +6,7 @@ in {
     extensions = {
       fzf-native.enable = true;
       undo.enable = true;
+      file-browser.enable = true;
     };
     settings = {
       pickers = {
