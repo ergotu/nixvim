@@ -3,18 +3,11 @@
     enable = true;
     settings = {
       scope = {
-        enabled = true;
+        show_exact_scope = true;
       };
       indent = {
-        # highlight = [
-        #   "RainbowRed"
-        #   "RainbowYellow"
-        #   "RainbowBlue"
-        #   "RainbowOrange"
-        #   "RainbowGreen"
-        #   "RainbowViolet"
-        #   "RainbowCyan"
-        # ];
+        char = "▎";
+        tab_char = "▎";
       };
       exclude = {
         filetypes = [
