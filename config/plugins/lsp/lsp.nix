@@ -136,16 +136,16 @@ in {
     (mkKeymap "n" "]E"
       "<cmd>lua require('lspsaga.diagnostic').goto_next({ severity = vim.diagnostic.severity.ERROR })<CR>"
       "Next Error")
-    (mkKeymap "n" "gd" "<cmd>Lspsaga goto_definition<CR>" "Goto Definations")
+    (mkKeymap "n" "gd" "<cmd>Lspsaga goto_definition<CR>" "Goto Definitions")
     (mkKeymap "n" "gh" "<cmd>Lspsaga lsp_finder<CR>" "LSP Finder")
     (mkKeymap "n" "gR" "<cmd>Lspsaga rename ++project<CR>" "Rename")
     (mkKeymap "n" "gt" "<cmd>Lspsaga goto_type_definition<CR>"
-      "Type Definations")
+      "Type Definitions")
     (mkKeymap "n" "gl" "<cmd>Lspsaga show_line_diagnostics<CR>"
       "Line Diagnostics")
-    (mkKeymap "n" "gpd" "<cmd>Lspsaga peek_definition<CR>" "Peek Definations")
+    (mkKeymap "n" "gpd" "<cmd>Lspsaga peek_definition<CR>" "Peek Definitions")
     (mkKeymap "n" "gpt" "<cmd>Lspsaga peek_type_definition<CR>"
-      "Peek Type Definations")
+      "Peek Type Definitions")
     (mkKeymap "n" "K" {
       __raw =
         # lua
