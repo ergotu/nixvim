@@ -1,5 +1,5 @@
 {pkgs, ...}: {
-  extraPlugins = with pkgs.vimPlugins; [vim-go];
+  extraPlugins = with pkgs.vimPlugins; [go-nvim];
   plugins = {
     lsp.servers.gopls.enable = true;
     none-ls.sources = {
@@ -29,4 +29,10 @@
       command = "setlocal shiftwidth=4 tabstop=4 softtabstop=4";
     }
   ];
+
+  extraConfigLua =
+    # lua
+    ''
+      require('go').setup()
+    '';
 }
