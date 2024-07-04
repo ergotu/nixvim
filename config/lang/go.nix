@@ -4,7 +4,7 @@
     lsp.servers.gopls.enable = true;
     none-ls.sources = {
       formatting = {
-        gofmt.enable = true;
+        gofumpt.enable = true;
         goimports.enable = true;
       };
       diagnostics = {
@@ -18,7 +18,7 @@
       enable = true;
       delve.path = "${pkgs.delve}/bin/dlv";
     };
-    conform-nvim.formattersByFt.go = ["goimports" "gofmt"];
+    conform-nvim.formattersByFt.go = ["goimports" "gofumpt"];
   };
 
   autoCmd = [
