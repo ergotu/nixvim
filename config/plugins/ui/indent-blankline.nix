@@ -3,7 +3,7 @@
     enable = true;
     settings = {
       scope = {
-        show_exact_scope = true;
+        enabled = true;
       };
       indent = {
         char = "▎";
