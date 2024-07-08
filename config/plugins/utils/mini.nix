@@ -6,6 +6,7 @@
       indentscope = {
         symbol = "│";
       };
+      surround = {};
     };
   };
 }

@@ -42,7 +42,6 @@ in {
     (mkKeymap "n" "<Tab>" "<cmd>BufferLineCycleNext<cr>" "Cycle to next buffer")
     (mkKeymap "n" "<S-Tab>" "<cmd>BufferLineCyclePrev<cr>" "Cycle to previous buffer")
 
-    (mkKeymap "n" "<leader>b" "+buffer" "+buffer")
     (mkKeymap "n" "<leader>bp" "<cmd>:BufferLinePick<cr>" "BufferLine Pick")
     (mkKeymap "n" "<leader>bP" "<cmd>BufferLineTogglePin<cr>" "Buffer Pin")
     (mkKeymap "n" "<leader>bd" "<cmd>BufferLineSortByDirectory<cr>" "Buffer Sort by dir")
