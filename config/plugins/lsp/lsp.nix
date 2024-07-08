@@ -39,10 +39,21 @@ in {
     };
   };
 
+  diagnostics = {
+    virtual_text = false;
+    underline = true;
+    signs = true;
+    severity_sort = true;
+    float = {
+      border = "${opts.border}";
+      source = "always";
+      focusable = false;
+    };
+  };
+
   extraConfigLua =
     # lua
     ''
-
       local signs = {
           Hint = "${icons.diagnostics.BoldHint}",
           Info = "${icons.diagnostics.BoldInformation}",
@@ -54,19 +65,6 @@ in {
           local hl = "DiagnosticSign" .. type
           vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
         end
-
-      vim.diagnostic.config({
-        virtual_text = false,
-        underline = true,
-        signs = true,
-        severity_sort = true,
-        float = {
-          border = "${opts.border}",
-          source = "always",
-          focusable = false,
-        },
-      })
-
     '';
 
   keymaps = [
