@@ -42,4 +42,12 @@ in {
       ]])
 
     '';
+  autoCmd = [
+    {
+      desc = "Set spellang for markdown files";
+      event = ["FileType"];
+      pattern = ["md"];
+      command = "setlocal spell spellang=en";
+    }
+  ];
 }
