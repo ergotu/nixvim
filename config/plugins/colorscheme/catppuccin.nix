@@ -10,11 +10,10 @@
         cmp = true;
         gitsigns = true;
         neotree = true;
-        barbar = true;
         which_key = true;
         treesitter = true;
         fidget = true;
-        notifier = true;
+        notify = true;
         dap_ui = true;
         ufo = true;
         lsp_saga = true;

@@ -1,10 +1,4 @@
 {
-  pkgs,
-  mkKey,
-  ...
-}: let
-  inherit (mkKey) mkKeymap;
-in {
   plugins.noice = {
     enable = true;
     lsp = {
@@ -13,6 +7,20 @@ in {
         "vim.lsp.util.stylize_markdown" = true;
         "cmp.entry.get_documentation" = true;
       };
+      message = {
+        enabled = true;
+      };
+      hover = {
+        enabled = false;
+      };
+      progress = {
+        enabled = false;
+        view = "mini";
+      };
+    };
+    popupmenu = {
+      enabled = true;
+      backend = "nui";
     };
     presets = {
       bottom_search = true;
@@ -22,10 +30,4 @@ in {
       lsp_doc_border = false;
     };
   };
-  keymaps = [
-    (mkKeymap "n" "<leader>un" {__raw = "function () require('notify').dismiss() end";} "Dismiss notification")
-  ];
-  extraPlugins = with pkgs.vimPlugins; [
-    nvim-notify
-  ];
 }
