@@ -3,20 +3,21 @@
 in {
   plugins.flash = {
     enable = true;
+    settings = {
+      search = {
+        mode = "fuzzy";
+      };
 
-    search = {
-      mode = "fuzzy";
-    };
+      jump = {
+        autojump = true;
+      };
 
-    jump = {
-      autojump = true;
-    };
-
-    label = {
-      uppercase = false;
-      rainbow = {
-        enabled = false;
-        shade = 5;
+      label = {
+        uppercase = false;
+        rainbow = {
+          enabled = false;
+          shade = 5;
+        };
       };
     };
   };
