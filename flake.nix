@@ -37,20 +37,10 @@
       url = "github:Shatur/neovim-session-manager";
       flake = false;
     };
-    md-pdf = {
-      url = "github:arminveres/md-pdf.nvim";
+    markdown-nvim = {
+      url = "github:MeanderingProgrammer/markdown.nvim";
       flake = false;
     };
-
-    nvim-md = {
-      url = "github:ixru/nvim-markdown";
-      flake = false;
-    };
-    nvim-hl-md = {
-      url = "github:yaocccc/nvim-hl-mdcodeblock.lua";
-      flake = false;
-    };
-
     windows = {
       url = "github:anuvyklack/windows.nvim";
       flake = false;

@@ -235,19 +235,19 @@
         "type": "github"
       }
     },
-    "md-pdf": {
+    "markdown-nvim": {
       "flake": false,
       "locked": {
-        "lastModified": 1717929188,
-        "narHash": "sha256-+XTApHf6BJj34Ag3FH2Aql0/7abOJHRikvkaC/zCigQ=",
-        "owner": "arminveres",
-        "repo": "md-pdf.nvim",
-        "rev": "129428c4dbed9a6499ed3e1208f5b806979aff14",
+        "lastModified": 1720502528,
+        "narHash": "sha256-BsdnHiinI8q9Ov3gOI0cktOq4WkVZ+wEWU7oP35N7RU=",
+        "owner": "MeanderingProgrammer",
+        "repo": "markdown.nvim",
+        "rev": "7acc1bf0ecc207411ad6dcf8ecf02f76fe8cbe13",
         "type": "github"
       },
       "original": {
-        "owner": "arminveres",
-        "repo": "md-pdf.nvim",
+        "owner": "MeanderingProgrammer",
+        "repo": "markdown.nvim",
         "type": "github"
       }
     },
@@ -375,38 +375,6 @@
         "type": "github"
       }
     },
-    "nvim-hl-md": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1682765089,
-        "narHash": "sha256-uGn2RcyYhla0nY9Jyn5FIcvaZjd6i9EPAQ+5UuPKumU=",
-        "owner": "yaocccc",
-        "repo": "nvim-hl-mdcodeblock.lua",
-        "rev": "a652470bfed791d5026f6a35bacdfe90a9d8ac2f",
-        "type": "github"
-      },
-      "original": {
-        "owner": "yaocccc",
-        "repo": "nvim-hl-mdcodeblock.lua",
-        "type": "github"
-      }
-    },
-    "nvim-md": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1717236659,
-        "narHash": "sha256-tZQpioTsVwMO+rnqsid0d1F1Tbpc8IQXY8+HPWbNoak=",
-        "owner": "ixru",
-        "repo": "nvim-markdown",
-        "rev": "bf5c87788156f072cfb87b994844424b164b5b44",
-        "type": "github"
-      },
-      "original": {
-        "owner": "ixru",
-        "repo": "nvim-markdown",
-        "type": "github"
-      }
-    },
     "pre-commit-hooks": {
       "inputs": {
         "flake-compat": "flake-compat_2",
@@ -435,13 +403,11 @@
         "buffer-manager": "buffer-manager",
         "color-picker": "color-picker",
         "flake-parts": "flake-parts",
-        "md-pdf": "md-pdf",
+        "markdown-nvim": "markdown-nvim",
         "moveline": "moveline",
         "nixpkgs": "nixpkgs",
         "nixvim": "nixvim",
         "ntree-float": "ntree-float",
-        "nvim-hl-md": "nvim-hl-md",
-        "nvim-md": "nvim-md",
         "pre-commit-hooks": "pre-commit-hooks",
         "session-manager": "session-manager",
         "ts-comments": "ts-comments",

@@ -13,12 +13,8 @@ in {
   extraPlugins = [
     pkgs.vimPlugins.glow-nvim
     (pkgs.vimUtils.buildVimPlugin {
-      name = "nvim-markdown";
-      src = inputs.nvim-md;
-    })
-    (pkgs.vimUtils.buildVimPlugin {
-      name = "nvim-hl-md";
-      src = inputs.nvim-hl-md;
+      name = "render-markdown";
+      src = inputs.markdown-nvim;
     })
   ];
   keymaps = [
@@ -35,12 +31,11 @@ in {
       local ok, g = pcall(require, "glow")
       if ok then
         g.setup()
+        end
+      local ok, markdown = pcall(require, "render-markdown")
+      if ok then
+        markdown.setup()
       end
-
-      vim.cmd([[
-      let g:vim_markdown_conceal = 2
-      ]])
-
     '';
   autoCmd = [
     {
