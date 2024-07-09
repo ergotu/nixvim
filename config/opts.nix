@@ -3,6 +3,7 @@
   lib,
   ...
 }: {
+  enableMan = true;
   viAlias = true;
   vimAlias = true;
 
