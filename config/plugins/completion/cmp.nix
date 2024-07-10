@@ -42,10 +42,6 @@
             keyword_length = 2;
           }
           {name = "luasnip";}
-          {
-            name = "buffer";
-            keyword_length = 2;
-          }
         ];
         mapping = {
           "<Tab>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
