@@ -36,6 +36,13 @@
           {
             name = "nvim_lsp";
             keyword_length = 3;
+            entry_filter =
+              # lua
+              ''
+                function(entry, ctx)
+                  return require("cmp").lsp.CompletionItemKind.Text ~= entry:get_kind()
+                end
+              '';
           }
           {
             name = "nvim_lua";
