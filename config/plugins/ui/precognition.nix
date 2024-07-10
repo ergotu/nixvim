@@ -12,6 +12,8 @@
     })
   ];
   extraConfigLua = ''
-    require('precognition').setup({ })
+    require('precognition').setup({
+      startVisible = false,
+    })
   '';
 }
