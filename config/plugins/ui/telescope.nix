@@ -23,6 +23,9 @@ in {
           v = {
             __raw = "require('telescope.actions').select_vertical";
           };
+          "<C-d>" = {
+            __raw = "require('telescope.actions').delete_buffer";
+          };
         };
       };
     };
