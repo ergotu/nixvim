@@ -12,7 +12,23 @@
     })
   ];
 
-  extraConfigLua = ''
-    require("telescope").load_extension("yaml_schema")
-  '';
+  extraConfigLua =
+    #lua
+    ''
+      require("telescope").load_extension("yaml_schema")
+
+      local cfg = require("yaml-companion").setup({
+        lspconfig = {
+          capabilities = {
+            textDocument = {
+              foldingRange = {
+                dynamicRegistration = false,
+                lineFoldingOnly = true,
+              },
+            },
+          },
+        }
+      })
+      require("lspconfig")["yamlls"].setup(cfg)
+    '';
 }
