@@ -13,6 +13,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    kulala = {
+      url = "github:mistweaverco/kulala.nvim";
+      flake = false;
+    };
+
     ts-comments = {
       url = "github:folke/ts-comments.nvim";
       flake = false;
@@ -89,9 +94,10 @@
             // import ./lib {inherit lib;};
         };
         nvim = nixvim'.makeNixvimWithModule nixvimModule;
+        nixvimLib = nixvim.lib.${system};
       in {
         checks = {
-          default = pkgs.nixvimLib.check.mkTestDerivationFromNvim {
+          default = nixvimLib.check.mkTestDerivationFromNvim {
             inherit nvim;
             name = "A nixvim configuration";
           };

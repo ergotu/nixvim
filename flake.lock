@@ -235,6 +235,22 @@
         "type": "github"
       }
     },
+    "kulala": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1721592929,
+        "narHash": "sha256-I/HumPkzPCHi0shcNk9dwgKCxVMXDu19hp60oX92SFM=",
+        "owner": "mistweaverco",
+        "repo": "kulala.nvim",
+        "rev": "9f7d76ae25779aac1a6240901ae5873ca598fa1d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mistweaverco",
+        "repo": "kulala.nvim",
+        "type": "github"
+      }
+    },
     "markdown-nvim": {
       "flake": false,
       "locked": {
@@ -403,6 +419,7 @@
         "buffer-manager": "buffer-manager",
         "color-picker": "color-picker",
         "flake-parts": "flake-parts",
+        "kulala": "kulala",
         "markdown-nvim": "markdown-nvim",
         "moveline": "moveline",
         "nixpkgs": "nixpkgs",
