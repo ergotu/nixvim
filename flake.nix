@@ -97,10 +97,7 @@
         nixvimLib = nixvim.lib.${system};
       in {
         checks = {
-          default = nixvimLib.check.mkTestDerivationFromNvim {
-            inherit nvim;
-            name = "A nixvim configuration";
-          };
+          nvim = nixvimLib.check.mkTestDerivationFromNixvimModule nixvimModule;
           pre-commit-check = pre-commit-hooks.lib.${system}.run {
             src = ./.;
             hooks = {
