@@ -12,6 +12,13 @@
       left = "";
       right = "";
     };
+    disabledFiletypes = {
+      statusline = [
+        "Trouble"
+        "sagaoutline"
+        "neo-tree"
+      ];
+    };
   };
   extraConfigLua =
     # lua
