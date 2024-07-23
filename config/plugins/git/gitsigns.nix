@@ -9,6 +9,11 @@ in {
     enable = true;
     settings = {
       current_line_blame = true;
+      current_line_blame_opts = {
+        virt_text = true;
+        virt_text_pos = "eol";
+        ignore_whitespace = false;
+      };
       signs = {
         add = {
           text = "${icons.ui.LineLeft}";
