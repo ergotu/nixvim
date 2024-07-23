@@ -18,6 +18,12 @@
         view = "mini";
       };
     };
+    messages = {
+      enabled = true;
+      view = "mini";
+      viewWarn = "mini";
+      viewError = "notify";
+    };
     popupmenu = {
       enabled = true;
       backend = "nui";
